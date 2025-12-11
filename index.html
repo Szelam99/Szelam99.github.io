@@ -8,6 +8,7 @@
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,49 +16,59 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #f5f3f0;
+
+      /* 柔和淡粉 + 淡蓝渐变背景 */
+      background: linear-gradient(160deg, #fdf2f7 0%, #f0f7ff 100%);
+
       color: #333;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-                   system-ui, -system-ui, "Helvetica Neue", Arial, sans-serif;
+      font-family: "Georgia", "Palatino", "Times New Roman", serif;
     }
+
     .container {
       max-width: 720px;
       padding: 24px;
+      text-align: left;
     }
+
     .brand {
       font-size: 12px;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #888;
-      margin-bottom: 24px;
+      color: #777;
+      margin-bottom: 28px;
     }
+
     .quote {
-      font-size: 16px;
-      line-height: 1.9;
+      font-size: 17px;
+      line-height: 1.85;
       letter-spacing: 0.02em;
       color: #444;
-      margin: 0 0 32px 0;
+      margin: 0 0 36px 0;
       white-space: pre-line; /* 保留换行 */
     }
+
     .cta {
       margin-top: 8px;
     }
+
     .button {
       display: inline-block;
-      padding: 8px 18px;
+      padding: 8px 20px;
       border-radius: 999px;
-      border: 1px solid #aaa;
+      border: 1px solid #888;
       text-decoration: none;
       font-size: 13px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #444;
-      background: #f5f3f0;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(3px);
       transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
     }
+
     .button:hover {
       background: #444;
-      color: #f5f3f0;
+      color: #fdfdfd;
       border-color: #444;
     }
   </style>
@@ -66,13 +77,13 @@
   <div class="container">
     <div class="brand">Jello's Pillow</div>
 
-    <p class="quote">
-How much better is silence; the coffee cup, the table.
+    <p class="quote">How much better is silence; the coffee cup, the table.
 How much better to sit by myself like the solitary seabird that opens its wings on the stake.
-Let me sit here forever with bare things, this coffee cup, this knife, this fork, things in themselves, myself being myself.
-</p>
-   <div class="cta">
-     <a href="notes.html" class="button">Enter</a>
-   </div>
- </div>
-</body> </html> ```
+Let me sit here forever with bare things, this coffee cup, this knife, this fork, things in themselves, myself being myself.</p>
+
+    <div class="cta">
+      <a href="notes.html" class="button">Enter</a>
+    </div>
+  </div>
+</body>
+</html>
