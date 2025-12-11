@@ -17,8 +17,8 @@
       align-items: center;
       justify-content: center;
 
-      /* 柔和淡粉 + 淡蓝渐变背景 */
-      background: linear-gradient(160deg, #fdf2f7 0%, #f0f7ff 100%);
+      /* 柔和稍深的粉蓝渐变 */
+      background: linear-gradient(155deg, #f8dfe8 0%, #dce9f7 100%);
 
       color: #333;
       font-family: "Georgia", "Palatino", "Times New Roman", serif;
@@ -34,41 +34,45 @@
       font-size: 12px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #777;
+      color: #666;
       margin-bottom: 28px;
     }
 
     .quote {
       font-size: 17px;
-      line-height: 1.85;
+      line-height: 1.9;
       letter-spacing: 0.02em;
-      color: #444;
+      color: #3e3e3e;
       margin: 0 0 36px 0;
-      white-space: pre-line; /* 保留换行 */
+    }
+
+    .quote span {
+      display: block;
+      margin-bottom: 6px;
     }
 
     .cta {
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     .button {
       display: inline-block;
       padding: 8px 20px;
       border-radius: 999px;
-      border: 1px solid #888;
+      border: 1px solid #666;
       text-decoration: none;
       font-size: 13px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: #444;
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(3px);
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
       transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
     }
 
     .button:hover {
       background: #444;
-      color: #fdfdfd;
+      color: white;
       border-color: #444;
     }
   </style>
@@ -77,10 +81,17 @@
   <div class="container">
     <div class="brand">Jello's Pillow</div>
 
-    <p class="quote">How much better is silence; the coffee cup, the table.
-How much better to sit by myself
-like the solitary seabird that opens its wings on the stake.
-Let me sit here forever with bare things, this coffee cup, this knife, this fork, things in themselves, myself being myself.</p>
+    <p class="quote">
+      <span>How much better is silence; the coffee cup, the table.</span>
+      <br>
+
+      <span>How much better to sit by myself</span>
+      <span>like the solitary seabird that opens its wings on the stake.</span>
+      <br>
+
+      <span>Let me sit here forever with bare things, this coffee cup, this knife, this fork,</span>
+      <span>things in themselves, myself being myself.</span>
+    </p>
 
     <div class="cta">
       <a href="notes.html" class="button">Enter</a>
